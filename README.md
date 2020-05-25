@@ -55,6 +55,8 @@ $ npm run start:prod
 
 The app is accessible at [http://localhost:3000/](http://localhost:3000/)
 
+The frontend uses Angular. Utilize the NGCLI tools with `npm run ng`, such as `npm run ng -- g c MyComponent` to create a new component
+
 ## Test
 
 ```bash
