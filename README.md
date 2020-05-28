@@ -61,6 +61,7 @@ The frontend client can be found in `zane-time-log-counter-client/`
 
 TODO: Running the full stack
 
+building: npm run build in the client, npm run build in the parent, move the client dist into the main dist
 
 ## Test
 
