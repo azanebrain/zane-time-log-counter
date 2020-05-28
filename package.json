@@ -33,8 +33,11 @@
     "rxjs": "^6.5.4"
   },
   "devDependencies": {
-    "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/core": "~9.1.9",
+    "@angular/platform-browser": "~9.1.9",
+    "@angular/platform-browser-dynamic": "~9.1.9",
+    "@angular/router": "~9.1.9",
+    "protractor": "~7.0.0",
         
 
     "@nestjs/cli": "^7.1.5",
