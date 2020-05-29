@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "description": "A web tool to log time spent on tasks",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "ng": "node_modules/.bin/ng"
+  },
+  "devDependencies": {
+    "@angular/cli": "^9.1.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
