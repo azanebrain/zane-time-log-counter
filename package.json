@@ -1,0 +1,21 @@
+{
+  "name": "zane-time-log-counter",
+  "version": "0.0.0",
+  "description": "A web tool to log time spent on tasks",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azanebrain/zane-time-log-counter.git"
+  },
+  "author": "AJ Zane <AndroidDreams@AJZane.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/azanebrain/zane-time-log-counter/issues"
+  },
+  "homepage": "https://github.com/azanebrain/zane-time-log-counter#readme"
+}
