@@ -9,6 +9,12 @@
         "@schematics/angular:component": {
           "style": "sass",
           "lintFix": true
+        },
+        "@schematics/angular:module": {
+          "lintFix": true
+        },
+        "@schematics/angular:service": {
+          "lintFix": true
         }
       },
       "root": "",
