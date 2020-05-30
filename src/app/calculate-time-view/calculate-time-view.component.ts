@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { CalculateService } from '../calculate/calculate.service'
 
 /**
  * This view accepts user input and triggers calculation logic
@@ -10,13 +11,13 @@ import { Component, OnInit } from '@angular/core'
 })
 export class CalculateTimeViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private calculateService: CalculateService) { }
 
   ngOnInit(): void {
   }
 
   public onCalculateTime(timeLog: any) {
-    console.log(`timeLog: `, timeLog);
+    this.calculateService.countAllTimeOfAllTasks(timeLog)
   }
 
 }
