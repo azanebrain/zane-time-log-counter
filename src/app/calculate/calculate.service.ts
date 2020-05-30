@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core'
+import { Log } from '../log/log.model'
 
 /**
  * Executes business logic for calculating time logged
@@ -13,7 +14,7 @@ export class CalculateService {
    * Given a list of logs, provides an overview of how much total time has been spent on each top-level task
    * @param logs A list of logs being counted
    */
-  public countAllTimeOfAllTasks(logs: any[]) {
+  public countAllTimeOfAllTasks(logs: Log[]) {
     console.log(`logs: `, logs)
   }
 }

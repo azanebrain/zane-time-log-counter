@@ -2,6 +2,29 @@
 
 A web tool to log time spent on tasks.
 
+A Time Log Entity is a JSON object that tracks how many minutes were spent on a specific task on a specific day.
+
+Each task can either have the number of minutes spent, or it can have any number of sub tasks, which again, can either be the amount of time, or another set of subtasks.
+
+A Log entity can also have other, undefined types, providing extensibility to this system.
+
+Example:
+
+```
+{
+  "date": "2019-11-18",
+  "organize": { "organize": 42 },
+  "awesome-side-project": {
+    "organize": 147,
+    "research": 4,
+    "front-end": {
+      "dev": 18,
+      "test": 51
+    }
+  }
+}
+```
+
 ## Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
