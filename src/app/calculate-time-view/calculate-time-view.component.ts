@@ -15,4 +15,8 @@ export class CalculateTimeViewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public onCalculateTime(timeLog: any) {
+    console.log(`timeLog: `, timeLog);
+  }
+
 }
