@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { CalculateService } from '../calculate/calculate.service'
-import { Log } from '../log/log.model'
+import { Log, Task } from '../log/log.model'
 
 /**
  * This view accepts user input and triggers calculation logic
@@ -11,6 +11,8 @@ import { Log } from '../log/log.model'
   styleUrls: ['./calculate-time-view.component.sass'],
 })
 export class CalculateTimeViewComponent implements OnInit {
+  public result: Task
+
   constructor(private calculateService: CalculateService) {}
 
   ngOnInit(): void {}
@@ -21,7 +23,8 @@ export class CalculateTimeViewComponent implements OnInit {
    * @param timeLog The user input. A string, but should be in Log[] format
    */
   public onCalculateTime(timeLog: string | Log[]) {
-    const result = this.calculateService.countAllTimeOfAllTasks(timeLog as string)
-    console.log(`result: `, result)
+    this.result = this.calculateService.countAllTimeOfAllTasks(
+      timeLog as string
+    )
   }
 }

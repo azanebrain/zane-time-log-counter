@@ -1,3 +1,6 @@
 <p>Enter your time log below:</p>
 <textarea type="text" #timeLogInput></textarea>
 <button (click)="onCalculateTime(timeLogInput.value)">Submit</button>
+<br />
+Result:
+<pre>{{ result | json }}</pre>
