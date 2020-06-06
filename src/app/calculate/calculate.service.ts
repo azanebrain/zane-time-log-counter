@@ -16,7 +16,13 @@ export class CalculateService {
    * @param logs A list of logs being counted
    */
   public countAllTimeOfAllTasks(logs: string): Task {
-    const logsAsJson: Log[] = JSON.parse(logs as string)
+    let logsAsJson: Log[]
+    try {
+      logsAsJson = JSON.parse(logs as string)
+    } catch (error) {
+      alert ('An error occurred! ' + error)
+      return
+    }
 
     // An output to track each item being aggregated
     const output = {}

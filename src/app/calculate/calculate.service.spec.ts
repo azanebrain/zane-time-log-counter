@@ -26,5 +26,13 @@ describe('CalculateService', () => {
       const mockAsString = JSON.stringify(MOCK_LOGS)
       expect(service.countAllTimeOfAllTasks(mockAsString)).toEqual(expectedValue)
     })
+
+    it(`should throw an error with invalid JSON`, () => {
+      spyOn(window, 'alert')
+
+      service.countAllTimeOfAllTasks('foo')
+
+      expect(window.alert).toHaveBeenCalled()
+    })
   })
 })
