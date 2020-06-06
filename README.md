@@ -56,3 +56,15 @@ To get more help on the Angular CLI use `npm run ng -- help` or go check out the
 ## Deployment
 
 To be determined...
+
+# Troubleshooting
+
+## No binary for Chrome browser on your platform
+
+You may come across this error if you don't have the Chrome Browser installed. I like to use Chromium on Ubuntu with [Snap](https://snapcraft.io) so I had to make this update:
+
+```
+export CHROME_BIN=/snap/bin/chromium
+```
+
+To determine where your Chromium is installed, run `which chromium`.
